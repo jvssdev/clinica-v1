@@ -37,13 +37,13 @@ const Depoimentos = () => {
     <div className="relative min-h-screen w-full text-white overflow-hidden">
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <Quote className="mx-auto mb-8 w-12 h-12 text-indigo-400" />
+          <Quote className="mx-auto mb-8 w-12 h-12 text-cyan-400" />
           <div className="space-y-8">
-            <p className="text-2xl text-indigo-900 md:text-4xl font-light leading-relaxed">
+            <p className="text-2xl text-cyan-900 md:text-4xl font-light leading-relaxed">
               {depoimentos[depoimentoAtual].depoimento}
             </p>
             <div className="mt-6">
-              <p className="text-indigo-400 font-semibold text-xl">
+              <p className="text-cyan-400 font-semibold text-xl">
                 {depoimentos[depoimentoAtual].autor}
               </p>
             </div>
@@ -55,7 +55,7 @@ const Depoimentos = () => {
                 onClick={() => setDepoimentoAutal(indice)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   indice === depoimentoAtual
-                    ? "bg-indigo-400 w-6"
+                    ? "bg-cyan-400 w-6"
                     : "bg-gray-600 hover:bg-gray-500"
                 }`}
                 aria-label={`Ver depoimentos ${indice + 1}`}

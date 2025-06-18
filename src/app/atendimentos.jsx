@@ -30,9 +30,9 @@ export default function Atendimento() {
         {atendimentos.map((atendimento) => (
           <div key={atendimento.nome} className="relative overflow-hidden rounded-lg border p-8">
             <div className="flex items-center gap-4">
-              <h3 className="font-bold text-indigo-900">{atendimento.nome}</h3>
+              <h3 className="font-bold text-cyan-900">{atendimento.nome}</h3>
             </div>
-            <p className="text-lg md:text-xl text-muted-foreground text-indigo-800">{atendimento.descricao}</p>
+            <p className="text-lg md:text-xl text-muted-foreground text-cyan-800">{atendimento.descricao}</p>
           </div>
         ))}
       </div>
