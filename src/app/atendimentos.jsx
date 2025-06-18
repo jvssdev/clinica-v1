@@ -1,0 +1,41 @@
+const atendimentos = [
+  {
+    nome: "Exames Odontológicos",
+    descricao: "A prevenção começa com uma avaliação completa. Realizamos exames odontológicos periódicos para identificar possíveis problemas bucais e garantir um acompanhamento personalizado para a sua saúde oral.",
+  },
+  {
+    nome: "Clareamento Dental",
+    descricao: "Restaure a beleza do seu sorriso com um clareamento dental eficaz e supervisionado por profissionais. Ideal para remover manchas e recuperar o brilho natural dos dentes de forma segura.",
+  },
+  {
+    nome: "Tratamentos Ortodônticos",
+    descricao: "Alinhe seu sorriso com nossos tratamentos ortodônticos personalizados. Oferecemos desde aparelhos tradicionais até soluções mais discretas, adequadas para crianças, adolescentes e adultos.",
+  },
+  {
+    nome: "Implantes Dentários",
+    descricao: "Recupere a funcionalidade e a estética do seu sorriso com implantes dentários seguros e duradouros. Indicados para quem perdeu um ou mais dentes, os implantes devolvem conforto ao mastigar, falar e sorrir com confiança.",
+  },
+]
+
+export default function Atendimento() {
+  return (
+    <section className="container space-y-16 py-24 md:py-32">
+      <div className="mx-auto max-w-[58rem] text-center">
+        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Serviços Oferecidos </h2>
+        <p className="mt-4 text-muted-foreground sm:text-lg">
+          Entenda mais sobre alguns atendimentos que oferecemos
+        </p>
+      </div>
+      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
+        {atendimentos.map((atendimento) => (
+          <div key={atendimento.nome} className="relative overflow-hidden rounded-lg border p-8">
+            <div className="flex items-center gap-4">
+              <h3 className="font-bold text-indigo-900">{atendimento.nome}</h3>
+            </div>
+            <p className="text-lg md:text-xl text-muted-foreground text-indigo-800">{atendimento.descricao}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}

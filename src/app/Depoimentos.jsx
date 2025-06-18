@@ -34,12 +34,12 @@ const Depoimentos = () => {
   const [depoimentoAtual, setDepoimentoAutal] = useState(0);
 
   return (
-    <div className="relative min-h-screen w-full bg-black text-white overflow-hidden">
+    <div className="relative min-h-screen w-full text-white overflow-hidden">
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <Quote className="mx-auto mb-8 w-12 h-12 text-indigo-400" />
           <div className="space-y-8">
-            <p className="text-2xl md:text-4xl font-light leading-relaxed">
+            <p className="text-2xl text-indigo-900 md:text-4xl font-light leading-relaxed">
               {depoimentos[depoimentoAtual].depoimento}
             </p>
             <div className="mt-6">
