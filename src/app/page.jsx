@@ -113,11 +113,10 @@ import Atendimentos from "./atendimentos";
 export default function Clinica() {
   return (
     <div className="flex flex-col min-h-screen bg-[#FDF8F3]">
-      {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Home className="h-6 w-6 text-cyan-800" />
+            <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="#005f78"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-dental"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5.5c-1.074 -.586 -2.583 -1.5 -4 -1.5c-2.1 0 -4 1.247 -4 5c0 4.899 1.056 8.41 2.671 10.537c.573 .756 1.97 .521 2.567 -.236c.398 -.505 .819 -1.439 1.262 -2.801c.292 -.771 .892 -1.504 1.5 -1.5c.602 0 1.21 .737 1.5 1.5c.443 1.362 .864 2.295 1.262 2.8c.597 .759 2 .993 2.567 .237c1.615 -2.127 2.671 -5.637 2.671 -10.537c0 -3.74 -1.908 -5 -4 -5c-1.423 0 -2.92 .911 -4 1.5z" /><path d="M12 5.5l3 1.5" /></svg>
             <span className="text-xl font-bold text-cyan-800">
               Clínica Odontológica Aguiar
             </span>
@@ -130,7 +129,7 @@ export default function Clinica() {
                 Properti
             </Link>
             <Link href="#atendimentos" className="text-sm font-medium text-cyan-900 hover:text-cyan-700">
-                Serviços Oferecidos
+                Serviços oferecidos
             </Link>
             <Link href="#depoimentos" className="text-sm font-medium text-cyan-900 hover:text-cyan-700">
                 Depoimentos
@@ -316,7 +315,7 @@ export default function Clinica() {
         </section>
 
 <section id="localizacao" className="py-12 px-4">
-  <h2 className="text-2xl font-bold mb-4 text-center">Como chegar</h2>
+  <h2 className="text-2xl font-bold mb-4 text-center text-cyan-800">Como chegar</h2>
   
 <div className="max-w-3xl mx-auto px-4">
   <div className="max-w-3xl mx-auto px-4">
@@ -332,11 +331,9 @@ export default function Clinica() {
 </div>
 </section>
       </main>
-
-      {/* Footer */}
       <footer id="contato" className="bg-cyan-900 text-cyan-100 py-12">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="flex justify-between">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Home className="h-6 w-6 text-white" />
@@ -349,15 +346,24 @@ export default function Clinica() {
               </p>
               <div className="flex gap-4">
                 <Link href="#" className="text-white hover:text-cyan-300">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>                </Link>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="#ecfeff"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>                </Link>
                 <Link href="#" className="text-white hover:text-cyan-300">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>                </Link>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="#ecfeff"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>                </Link>
                 <Link href="#" className="text-white hover:text-cyan-300">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>                </Link>  
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="#ecfeff"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>                </Link>  
               </div>
+          </div>
+          <div> 
+<Image
+              src="/logo2.png"
+              alt="Logo Clínica Odontológica Aguiar"
+              className=""
+              width={500}
+              height={500}
+            />
+
             </div>
 <BotaoWhatsApp />
-            {/* ... demais colunas do footer */}
           </div>
 
           <div className="border-t border-cyan-700 mt-8 pt-8 text-center">
