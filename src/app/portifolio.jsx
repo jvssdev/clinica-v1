@@ -39,8 +39,8 @@ export default function Portifolio() {
   return (
     <div className="w-full max-w-4xl p-4">
       <div className="grid grid-cols-3 gap-4">
-        {imagens.slice(0, 6).map((item, index) => (
-          <div key={index} className="flex flex-col">
+        {imagens.map((item, indice) => (
+          <div key={indice} className="flex flex-col">
             <div className="relative overflow-hidden rounded-lg">
               <Image
                 src={item.imagem || "/imagem_reserva.svg"}
@@ -52,7 +52,7 @@ export default function Portifolio() {
               />
             </div>
             <div className="flex justify-center pt-2 pb-1">
-              <h3 className="text-xl font-bold text-gray-900 truncate">{item.descricao}</h3>
+              <h3 className="text-xl font-bold text-gray-900 text-center">{item.descricao}</h3>
             </div>
           </div>
         ))}
