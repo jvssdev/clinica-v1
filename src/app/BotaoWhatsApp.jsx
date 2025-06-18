@@ -53,7 +53,7 @@ export default function BotaoWhatsApp() {
       {mostrarMensagem && (
         <div
           onClick={aoClicarNaMensagem}
-          className="fixed right-[90px] bottom-[52px] w-[200px] h-[32px] bg-white text-black text-[13px] leading-[31px] text-center rounded-full border border-gray-300 z-[100] cursor-pointer"
+          className="fixed right-[90px] bottom-[52px] w-[200px] h-[32px] bg-transparent text-black text-[13px] leading-[31px] text-center rounded-full border border-gray-300 z-[100] cursor-pointer"
         >
           Podemos te ajudar em algo?
         </div>

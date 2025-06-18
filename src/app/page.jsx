@@ -145,14 +145,13 @@ export default function Clinica() {
       </header>
 
       <main className="flex-1">
-        {/* Hero Section */}
         <section id="inicio" className="relative pt-12 pb-20 md:pt-24 md:pb-40">
           <div className="absolute inset-0 z-0">
             <Image
               src="/logo.webp"
               alt="Logo Clínica Odontológica Aguiar"
               fill
-              className="object-cover opacity-20"
+              className="object-cover opacity-30"
               priority
             />
           </div>
@@ -331,9 +330,9 @@ export default function Clinica() {
 </div>
 </section>
       </main>
-      <footer id="contato" className="bg-cyan-900 text-cyan-100 py-12">
+      <footer id="contato" className="bg-cyan-900 text-cyan-100 py-12 ">
         <div className="container">
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Home className="h-6 w-6 text-white" />

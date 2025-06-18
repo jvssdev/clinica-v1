@@ -1,3 +1,4 @@
+import { Check } from "lucide-react"
 const atendimentos = [
   {
     nome: "Exames Odontológicos",
@@ -19,20 +20,27 @@ const atendimentos = [
 
 export default function Atendimento() {
   return (
-    <section className="container space-y-16 py-24 md:py-32">
-      <div className="mx-auto max-w-[58rem] text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Serviços Oferecidos </h2>
+    <section className="container space-y-16 py-24 md:py-32 text-center">
+      <div className="mx-auto max-w-[58rem]">
+        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
+          Serviços Oferecidos
+        </h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
           Entenda mais sobre alguns atendimentos que oferecemos
         </p>
       </div>
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
         {atendimentos.map((atendimento) => (
-          <div key={atendimento.nome} className="relative overflow-hidden rounded-lg border p-8">
-            <div className="flex items-center gap-4">
+          <div key={atendimento.nome}className="relative overflow-hidden rounded-lg border p-8 text-center">
+            <div className="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Check className="h-8 w-8 text-cyan-800" />
+            </div>
+            <div className="flex flex-col items-center gap-4">
               <h3 className="font-bold text-cyan-900">{atendimento.nome}</h3>
             </div>
-            <p className="text-lg md:text-xl text-muted-foreground text-cyan-800">{atendimento.descricao}</p>
+            <p className="text-lg md:text-xl text-muted-foreground text-cyan-800">
+              {atendimento.descricao}
+            </p>
           </div>
         ))}
       </div>
