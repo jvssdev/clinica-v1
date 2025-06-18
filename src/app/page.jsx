@@ -71,7 +71,9 @@ export default function Clinica() {
             <h2 className="text-3xl md:text-4xl font-bold text-cyan-900 text-center mb-12">
               Portifólio dos nossos serviços
             </h2>
-            <Portifolio/>
+            <div className="flex justify-center">
+              <Portifolio/>
+            </div>
           </div>
         </section>
 

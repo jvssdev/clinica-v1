@@ -37,7 +37,7 @@ const imagens = [
 
 export default function Portifolio() {
   return (
-    <div className="w-full max-w-4xl bg-white p-4">
+    <div className="w-full max-w-4xl p-4">
       <div className="grid grid-cols-3 gap-4">
         {imagens.slice(0, 6).map((item, index) => (
           <div key={index} className="flex flex-col">
@@ -51,8 +51,8 @@ export default function Portifolio() {
                 placeholder="blur"
               />
             </div>
-            <div className="pt-2 pb-1">
-              <h3 className="text-sm font-medium text-gray-900 truncate">{item.descricao}</h3>
+            <div className="flex justify-center pt-2 pb-1">
+              <h3 className="text-xl font-bold text-gray-900 truncate">{item.descricao}</h3>
             </div>
           </div>
         ))}
