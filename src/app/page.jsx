@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Atendimentos from "./atendimentos";
+import Portifolio from "./portifolio";
 
 export default function Clinica() {
   return (
@@ -70,106 +71,7 @@ export default function Clinica() {
             <h2 className="text-3xl md:text-4xl font-bold text-cyan-900 text-center mb-12">
               Portifólio dos nossos serviços
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Property 1 */}
-                <div className="relative h-64">
-                  {/* <Image */}
-                  {/*   src="/images/property-1.jpg" */}
-                  {/*   alt="Rumah Tipe Melati" */}
-                  {/*   fill */}
-                  {/*   className="object-cover" */}
-                  {/* /> */}
-                </div>
-                  <div className="flex justify-between items-center mb-3">
-                    <h3 className="text-xl font-bold text-cyan-900">
-                      Tipe Melati
-                    </h3>
-                    <span className="text-lg font-semibold text-cyan-800">
-                      Rp 850 juta
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 text-cyan-700 mb-2">
-                    <MapPin className="h-4 w-4" />
-                    <span className="text-sm">
-                      Bintaro, Jakarta Selatan
-                    </span>
-                  </div>
-                  <p className="text-cyan-800 mb-4">
-                    Rumah 2 lantai dengan 3 kamar tidur, 2 kamar mandi, dan
-                    taman belakang yang luas.
-                  </p>
-                  <button className="w-full bg-cyan-800 hover:bg-cyan-900">
-                    Lihat Detail
-                  </button>
-
-              {/* Property 2 */}
-                <div className="relative h-64">
-                  {/* <Image */}
-                  {/*   src="/images/property-2.jpg" */}
-                  {/*   alt="Apartemen Tipe Dahlia" */}
-                  {/*   fill */}
-                  {/*   className="object-cover" */}
-                  {/* /> */}
-                </div>
-                  <div className="flex justify-between items-center mb-3">
-                    <h3 className="text-xl font-bold text-cyan-900">
-                      Tipe Dahlia
-                    </h3>
-                    <span className="text-lg font-semibold text-cyan-800">
-                      Rp 1,2 miliar
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 text-cyan-700 mb-2">
-                    <MapPin className="h-4 w-4" />
-                    <span className="text-sm">
-                      Kemang, Jakarta Selatan
-                    </span>
-                  </div>
-                  <p className="text-cyan-800 mb-4">
-                    Rumah mewah dengan 4 kamar tidur, 3 kamar mandi, ruang
-                    keluarga luas, dan kolam renang pribadi.
-                  </p>
-                  <button className="w-full bg-cyan-800 hover:bg-cyan-900">
-                    Lihat Detail
-                  </button>
-
-              {/* Property 3 */}
-                <div className="relative h-64">
-                  {/* <Image */}
-                  {/*   src="/images/property-3.jpg" */}
-                  {/*   alt="Rumah Tipe Anggrek" */}
-                  {/*   fill */}
-                  {/*   className="object-cover" */}
-                  {/* /> */}
-                </div>
-                  <div className="flex justify-between items-center mb-3">
-                    <h3 className="text-xl font-bold text-cyan-900">
-                      Tipe Anggrek
-                    </h3>
-                    <span className="text-lg font-semibold text-cyan-800">
-                      Rp 650 juta
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 text-cyan-700 mb-2">
-                    <MapPin className="h-4 w-4" />
-                    <span className="text-sm">BSD City, Tangerang</span>
-                  </div>
-                  <p className="text-cyan-800 mb-4">
-                    Rumah nyaman dengan 2 kamar tidur, 2 kamar mandi, dan akses
-                    mudah ke atendimentos umum.
-                  </p>
-                  <button className="w-full bg-cyan-800 hover:bg-cyan-900">
-                    Lihat Detail
-                  </button>
-            </div>
-            <div className="text-center mt-12">
-              <button
-                variant="outline"
-                className="border-cyan-800 text-cyan-800 hover:bg-cyan-100"
-              >
-                Lihat Semua Properti
-              </button>
-            </div>
+            <Portifolio/>
           </div>
         </section>
 
