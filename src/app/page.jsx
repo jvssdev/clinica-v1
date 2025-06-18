@@ -4,111 +4,9 @@ import Depoimentos from "./Depoimentos";
 import {
   Home,
   MapPin,
-  Check,
 } from "lucide-react";
 import Link from "next/link";
 import Atendimentos from "./atendimentos";
-// export default function Home() {
-//   return (
-//     <>
-//
-//
-//
-//       Bem-vindo à Clínica Odontológica Aguiar
-//
-// Cuidando do seu sorriso com dedicação, conforto e confiança.
-//
-// Sob a nova direção da Dra. Larissa Aguiar, nossa clínica está comprometida em oferecer um atendimento odontológico acessível, humano e de alta qualidade. Aqui, você será recebido por uma equipe acolhedora e experiente, pronta para acompanhar você em todas as etapas da sua saúde bucal — da prevenção aos tratamentos mais avançados.
-//
-// Com foco em excelência clínica e atendimento personalizado, oferecemos tudo o que você precisa em um só lugar:
-//
-//     Restaurações estéticas, próteses e implantes dentários
-//
-//     Ortodontia, clareamento e facetas para transformar seu sorriso
-//
-//     Limpezas, exames preventivos e orientações para manter sua saúde bucal em dia
-//
-// Seja bem-vindo à Clínica Aguiar — onde o seu sorriso é a nossa prioridade.
-// <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-//       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-//         <Image
-//           className="dark:invert"
-//           src="/next.svg"
-//           alt="Next.js logo"
-//           width={180}
-//           height={38}
-//           priority
-//         />
-//         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-//           <li className="mb-2 tracking-[-.01em]">
-//             Clínica Odontológica Aguiar{" "}
-//           </li>
-//         </ol>
-//         <Depoimentos/>
-//         <div className="flex gap-4 items-center flex-col sm:flex-row">
-//           <a
-//             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-//             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <Image
-//               className="dark:invert"
-//               src="/vercel.svg"
-//               alt="Vercel logomark"
-//               width={20}
-//               height={20}
-//             />
-//             Deploy now
-//           </a>
-//           <a
-//             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-//             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Read our docs
-//           </a>
-//         </div>
-//       </main>
-//       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-//         <a
-//           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-//           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             aria-hidden
-//             src="/file.svg"
-//             alt="File icon"
-//             width={16}
-//             height={16}
-//           />
-//           Learn
-//         </a>
-//         <a
-//           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-//           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <Image
-//             aria-hidden
-//             src="/window.svg"
-//             alt="Window icon"
-//             width={16}
-//             height={16}
-//           />
-//           Examples
-//         </a>
-//         <BotaoWhatsApp />
-//       </footer>
-//     </div>
-//
-//     </>
-//       );
-// }
 
 export default function Clinica() {
   return (
@@ -125,8 +23,8 @@ export default function Clinica() {
             <Link className="text-sm font-medium text-cyan-900 hover:text-cyan-700" href="#inicio">
                 Início
             </Link>
-            <Link href="#properti" className="text-sm font-medium text-cyan-900 hover:text-cyan-700">
-                Properti
+            <Link href="#portifolio" className="text-sm font-medium text-cyan-900 hover:text-cyan-700">
+                Portifólio de Serviços
             </Link>
             <Link href="#atendimentos" className="text-sm font-medium text-cyan-900 hover:text-cyan-700">
                 Serviços oferecidos
@@ -145,32 +43,32 @@ export default function Clinica() {
       </header>
 
       <main className="flex-1">
-        <section id="inicio" className="relative pt-35 pb-30 md:pt-50 md:pb-50">
+        <section id="inicio" className="relative pt-35 pb-30 md:pt-50 md:pb-50 bg-cyan-900">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/logo3.png"
+              src="/logo4.png"
               alt="Logo Clínica Odontológica Aguiar"
               fill
-              className="object-cover opacity-40"
+              className="object-cover opacity-60"
               priority
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-800 mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-50 mb-6">
                 Carinho em cada detalhe, saúde em cada sorriso
               </h1>
-              <p className="text-lg md:text-xl text-cyan-800 mb-8">
+              <p className="text-lg md:text-xl text-cyan-100 mb-8">
                 Alcance o sorriso dos seus sonhos que possa transmitr saúde, confiança e felicidade com uma equipe que preza pelo seu conforto e bem-estar a preços acessíveis.         
               </p>
             </div>
           </div>
         </section>
 
-        <section id="properti" className="py-16 bg-cyan-50">
+        <section id="portifolio" className="py-16 bg-cyan-50">
           <div className="container">
             <h2 className="text-3xl md:text-4xl font-bold text-cyan-900 text-center mb-12">
-              Pilihan Hunian Eksklusif
+              Portifólio dos nossos serviços
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Property 1 */}
