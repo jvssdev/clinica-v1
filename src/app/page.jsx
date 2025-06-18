@@ -145,28 +145,28 @@ export default function Clinica() {
       </header>
 
       <main className="flex-1">
-        <section id="inicio" className="relative pt-12 pb-20 md:pt-24 md:pb-40">
+        <section id="inicio" className="relative pt-35 pb-30 md:pt-50 md:pb-50">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/logo.webp"
+              src="/logo3.png"
               alt="Logo Clínica Odontológica Aguiar"
               fill
-              className="object-cover opacity-30"
+              className="object-cover opacity-40"
               priority
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-900 mb-6">
-                Atendimento odontológico feito com o carinho que o seu sorriso merece
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-800 mb-6">
+                Carinho em cada detalhe, saúde em cada sorriso
               </h1>
               <p className="text-lg md:text-xl text-cyan-800 mb-8">
-                Alcance o sorriso dos seus sonhos que possa transmitr saúde, confiança e felicidade com uma equipe que preza pelo seu conforto e bem-estar a preços acessíveis.              </p>
+                Alcance o sorriso dos seus sonhos que possa transmitr saúde, confiança e felicidade com uma equipe que preza pelo seu conforto e bem-estar a preços acessíveis.         
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Property Showcase */}
         <section id="properti" className="py-16 bg-cyan-50">
           <div className="container">
             <h2 className="text-3xl md:text-4xl font-bold text-cyan-900 text-center mb-12">
