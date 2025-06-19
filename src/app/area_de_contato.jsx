@@ -10,8 +10,8 @@ export default function FormularioDeContato() {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Entre em Contato Conosco</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-cyan-900 mb-4">Entre em Contato Conosco</h2>
+          <p className="text-lg text-cyan-800 max-w-2xl mx-auto">
             Estamos aqui para esclarecer suas dúvidas e agendar sua consulta. Entre em contato através do formulário ou
             pelos nossos canais diretos.
           </p>
@@ -43,11 +43,11 @@ export default function FormularioDeContato() {
                   <div>
                     <p className="font-medium">Endereço</p>
                     <p className="text-gray-600">
-                      Rua das Flores, 123
+                      Praça dos Cristais
                       <br />
-                      Centro - São Paulo, SP
+                      Setor Militar Urbano – Brasília, DF
                       <br />
-                      CEP: 01234-567
+                      CEP: 70630-500
                     </p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function FormularioDeContato() {
  </div>
                   <h3 className="font-bold text-lg mb-2">Atendimento Imediato</h3>
                   <p className="text-gray-600 mb-4">
-                    Precisa de atendimento urgente? Fale conosco agora pelo WhatsApp!
+                    Precisa de atendimento urgente? Preencha o formulário abaixo e entraremos em contato via WhatsApp!
                   </p>
                   <a
                     href="https://api.whatsapp.com/send?phone=5538998030332&text=Olá! Olhei o site da clínica e gostaria de mais informações sobre os serviços odontológicos. Poderiam me ajudar?"
@@ -78,8 +78,9 @@ export default function FormularioDeContato() {
 
           <div className="bg-cyan-50 rounded-lg shadow-md border border-gray-200">
             <div className="p-6 border-b border-gray-200">
-              <h3 className="text-xl font-semibold">Envie sua Mensagem</h3>
-              <p className="text-gray-600 mt-2">Preencha o formulário abaixo e entraremos em contato via WhatsApp</p>
+<div><div className="text-4xl mb-4"><h3 className="text-xl font-semibold text-center">Envie sua Mensagem</h3>
+<div className="flex justify-center"><svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-message-circle-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.007 19.98a9.869 9.869 0 0 1 -4.307 -.98l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c1.992 1.7 2.93 4.04 2.747 6.34" /><path d="M16 19h6" /><path d="M19 16v6" /></svg></div></div></div>
+                            <p className="text-gray-600 mt-2">Precisa de atendimento urgente? Preencha o formulário abaixo e entraremos em contato via WhatsApp!</p>
             </div>
             <div className="p-6">
               <form action={acao} className="space-y-4">
