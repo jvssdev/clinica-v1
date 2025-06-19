@@ -1,39 +1,39 @@
-"use client"
+'use client';
 
-import Image from "next/image"
-import portifolio1 from "/public/portifolio1.webp"
-import portifolio2 from "/public/portifolio2.webp"
-import portifolio3 from "/public/portifolio3.webp"
-import portifolio4 from "/public/portifolio4.webp"
-import portifolio5 from "/public/portifolio5.webp"
-import portifolio6 from "/public/portifolio6.webp"
+import Image from 'next/image';
+import portifolio1 from '/public/portifolio1.webp';
+import portifolio2 from '/public/portifolio2.webp';
+import portifolio3 from '/public/portifolio3.webp';
+import portifolio4 from '/public/portifolio4.webp';
+import portifolio5 from '/public/portifolio5.webp';
+import portifolio6 from '/public/portifolio6.webp';
 
 const imagens = [
   {
     imagem: portifolio1,
-    descricao: "Implante dental",
+    descricao: 'Implante dental',
   },
   {
     imagem: portifolio2,
-    descricao: "Correção de diastema",
+    descricao: 'Correção de diastema',
   },
   {
     imagem: portifolio3,
-    descricao: "Alinhamento dentário",
+    descricao: 'Alinhamento dentário',
   },
   {
     imagem: portifolio4,
-    descricao: "Exame odontológico moderno",
+    descricao: 'Exame odontológico moderno',
   },
   {
     imagem: portifolio5,
-    descricao: "Limpeza dentária",
+    descricao: 'Limpeza dentária',
   },
   {
     imagem: portifolio6,
-    descricao: "Saúde das gengivas",
+    descricao: 'Saúde das gengivas',
   },
-]
+];
 
 export default function Portifolio() {
   return (
@@ -43,7 +43,7 @@ export default function Portifolio() {
           <div key={indice} className="flex flex-col">
             <div className="relative overflow-hidden rounded-lg">
               <Image
-                src={item.imagem || "/imagem_reserva.svg"}
+                src={item.imagem || '/imagem_reserva.svg'}
                 alt={item.descricao}
                 width={248}
                 height={160}
@@ -52,12 +52,13 @@ export default function Portifolio() {
               />
             </div>
             <div className="flex justify-center pt-2 pb-1">
-              <h3 className="text-xl font-bold text-gray-900 text-center">{item.descricao}</h3>
+              <h3 className="text-xl font-bold text-gray-900 text-center">
+                {item.descricao}
+              </h3>
             </div>
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
-

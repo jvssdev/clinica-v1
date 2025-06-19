@@ -1,5 +1,5 @@
-"use client";
-import { useEffect, useState } from "react";
+'use client';
+import { useEffect, useState } from 'react';
 
 export default function BotaoWhatsApp() {
   const [mostrarMensagem, setMostrarMensagem] = useState(false);
@@ -61,4 +61,3 @@ export default function BotaoWhatsApp() {
     </>
   );
 }
-
