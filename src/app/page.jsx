@@ -95,21 +95,12 @@ export default function Clinica() {
                 Não perca a oportunidade de ter atendimentos odontológicos confortáveis a um preço acessível. Entre em contato conosco agora para obter mais informações ou agendar uma visita.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-cyan-800 hover:bg-cyan-100 text-lg px-8 py-6">
-                  Contate-nos
-                </button>
-                <button
-                  variant="outline"
-                  className="border-white text-white hover:bg-cyan-700 text-lg px-8 py-6"
-                >
-                  Agende uma visita
-                </button>
-              </div>
+                              </div>
             </div>
           </div>
         </section>
   <FormularioDeContato/>
-  <section id="localizacao" className="py-12 px-4">
+  <section id="localizacao" className="py-12 px-4 bg-cyan-50">
     <h2 className="text-4xl font-bold mb-4 text-center text-cyan-800">Como chegar</h2>
     <div className="flex gap-2 text-cyan-700 mb-2 justify-center">
       <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>    </div>

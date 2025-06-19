@@ -53,27 +53,6 @@ export default function FormularioDeContato() {
                 </div>
               </div>
             </div>
-
-            <div className="bg-cyan-50 border border-green-200 rounded-lg shadow-md">
-              <div className="p-6">
-                <div className="text-center">
-                  <div className="flex justify-center"><div className="text-4xl mb-4"><svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-message-circle-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.007 19.98a9.869 9.869 0 0 1 -4.307 -.98l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c1.992 1.7 2.93 4.04 2.747 6.34" /><path d="M16 19h6" /><path d="M19 16v6" /></svg></div>
- </div>
-                  <h3 className="font-bold text-lg mb-2">Atendimento Imediato</h3>
-                  <p className="text-gray-600 mb-4">
-                    Precisa de atendimento urgente? Preencha o formulário abaixo e entraremos em contato via WhatsApp!
-                  </p>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=5538998030332&text=Olá! Olhei o site da clínica e gostaria de mais informações sobre os serviços odontológicos. Poderiam me ajudar?"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-cyan-700 transition-colors font-medium"
-                  >
-                    Chamar no WhatsApp
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="bg-cyan-50 rounded-lg shadow-md border border-gray-200">
