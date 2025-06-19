@@ -89,8 +89,8 @@ export default function FormularioDeContato() {
                       Nome Completo *
                     </label>
                     <input
-                      id="name"
-                      name="name"
+                      id="nome"
+                      name="nome"
                       type="text"
                       required
                       placeholder="Seu nome completo"
@@ -103,11 +103,11 @@ export default function FormularioDeContato() {
                       Telefone *
                     </label>
                     <input
-                      id="phone"
-                      name="phone"
+                      id="numero"
+                      name="numero"
                       type="tel"
                       required
-                      placeholder="(11) 99999-9999"
+                      placeholder="(61) 99999-9999"
                       disabled={pendente}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
                     />
@@ -134,8 +134,8 @@ export default function FormularioDeContato() {
                     Mensagem *
                   </label>
                   <textarea
-                    id="message"
-                    name="message"
+                    id="mensagem"
+                    name="mensagem"
                     required
                     placeholder="Descreva como podemos ajudá-lo..."
                     rows={4}

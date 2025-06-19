@@ -1,4 +1,3 @@
-import { Check } from "lucide-react"
 const atendimentos = [
   {
     nome: "Exames Odontológicos",
@@ -33,8 +32,7 @@ export default function Atendimento() {
         {atendimentos.map((atendimento) => (
           <div key={atendimento.nome}className="relative overflow-hidden rounded-lg border p-8 text-center">
             <div className="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Check className="h-8 w-8 text-cyan-800" />
-            </div>
+              <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>            </div>
             <div className="flex flex-col items-center gap-4">
               <h3 className="font-bold text-cyan-900">{atendimento.nome}</h3>
             </div>
