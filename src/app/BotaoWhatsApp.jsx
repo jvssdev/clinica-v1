@@ -21,7 +21,7 @@ export default function BotaoWhatsApp() {
   return (
     <>
       <a
-        href="https://api.whatsapp.com/send?phone=5538998030332&text=Olá!%20Vi%20o%20site%20da%20clínica%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20odontológicos.%20Poderiam%20me%20ajudar?"
+        href="https://api.whatsapp.com/send?phone=5538998030332&text=Olá! Olhei o site da clínica e gostaria de mais informações sobre os serviços odontológicos. Poderiam me ajudar?"
         className="fixed right-[25px] bottom-10 w-[60px] h-[60px] z-[100]"
         target="_blank"
         rel="noopener noreferrer"

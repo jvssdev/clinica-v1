@@ -20,7 +20,7 @@ const atendimentos = [
 
 export default function Atendimento() {
   return (
-    <section className="container space-y-16 py-24 md:py-32 text-center">
+    <section className="container space-y-16 py-24 md:py-24 text-center">
       <div className="mx-auto max-w-[58rem]">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
           Serviços Oferecidos

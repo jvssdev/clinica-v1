@@ -1,14 +1,10 @@
 import Image from "next/image";
 import BotaoWhatsApp from "./BotaoWhatsApp";
 import Depoimentos from "./Depoimentos";
-import {
-  Home,
-  MapPin,
-} from "lucide-react";
 import Link from "next/link";
 import Atendimentos from "./atendimentos";
 import Portifolio from "./portifolio";
-
+import FormularioDeContato from "./area_de_contato";
 export default function Clinica() {
   return (
     <div className="flex flex-col min-h-screen bg-[#FDF8F3]">
@@ -60,7 +56,7 @@ export default function Clinica() {
                 Carinho em cada detalhe, saúde em cada sorriso
               </h1>
               <p className="text-lg md:text-xl text-cyan-100 mb-8">
-                Alcance o sorriso dos seus sonhos que possa transmitr saúde, confiança e felicidade com uma equipe que preza pelo seu conforto e bem-estar a preços acessíveis.         
+                Alcance o sorriso dos seus sonhos que possa transmitr saúde, confiança e felicidade com uma equipe que preza pelo seu conforto e bem-estar a preços acessíveis.
               </p>
             </div>
           </div>
@@ -85,12 +81,10 @@ export default function Clinica() {
           </div>
         </section>
 
-        {/* Depoimentosals */}
         <section id="depoimentos" className="py-16 bg-cyan-50">
           <Depoimentos/>
         </section>
 
-        {/* CTA Section */}
         <section className="py-16 bg-cyan-800 text-white">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
@@ -114,31 +108,31 @@ export default function Clinica() {
             </div>
           </div>
         </section>
-
-<section id="localizacao" className="py-12 px-4">
-  <h2 className="text-2xl font-bold mb-4 text-center text-cyan-800">Como chegar</h2>
-  
-<div className="max-w-3xl mx-auto px-4">
-  <div className="max-w-3xl mx-auto px-4">
-    <iframe
-      title="Localização da Clínica Aguiar"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12247.428642167338!2d-47.89124835214896!3d-15.795352521492701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3baf9a15a8a9%3A0x816ce47727594834!2sPra%C3%A7a%20dos%20Cristais!5e0!3m2!1spt-BR!2sbr!4v1718648789206!5m2!1spt-BR!2sbr"
-      className="w-full h-96 rounded-lg shadow-md border-0"
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    />
-  </div>
-</div>
-</section>
+  <FormularioDeContato/>
+  <section id="localizacao" className="py-12 px-4">
+    <h2 className="text-4xl font-bold mb-4 text-center text-cyan-800">Como chegar</h2>
+    <div className="flex gap-2 text-cyan-700 mb-2 justify-center">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>    </div>
+    <div className="max-w-3xl mx-auto px-4">
+      <div className="max-w-3xl mx-auto px-4">
+        <iframe
+          title="Localização da Clínica Aguiar"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12247.428642167338!2d-47.89124835214896!3d-15.795352521492701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3baf9a15a8a9%3A0x816ce47727594834!2sPra%C3%A7a%20dos%20Cristais!5e0!3m2!1spt-BR!2sbr!4v1718648789206!5m2!1spt-BR!2sbr"
+          className="w-full h-96 rounded-lg shadow-md border-0"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+    </div>
+  </section>
       </main>
       <footer id="contato" className="bg-cyan-900 text-cyan-100 py-12 ">
         <div className="container">
           <div className="flex justify-between items-center">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Home className="h-6 w-6 text-white" />
-                <span className="text-xl font-bold text-white">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>                <span className="text-xl font-bold text-white">
                   Clínica Odontológica Aguiar
                 </span>
               </div>
