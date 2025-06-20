@@ -7,13 +7,13 @@ export default function FormularioDeContato() {
   const [estado, acao, pendente] = useActionState(enviarFormulario, null);
 
   return (
-    <section className="pb-16 bg-gray-50">
+    <section className="pb-16 bg-cyan-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-cyan-900 mb-4">
+          <h2 className="text-3xl font-bold text-cyan-50 mb-4">
             Entre em Contato Conosco
           </h2>
-          <p className="text-lg text-cyan-800 max-w-2xl mx-auto">
+          <p className="text-lg text-cyan-50 max-w-2xl mx-auto">
             Estamos aqui para esclarecer suas dúvidas e agendar sua consulta.
             Entre em contato através do formulário ou pelos nossos canais
             diretos.
@@ -24,7 +24,7 @@ export default function FormularioDeContato() {
           <div className="p-6 border-b border-gray-200">
             <div>
               <div className="text-4xl mb-4">
-                <h3 className="text-xl font-semibold text-center">
+                <h3 className="text-cyan-900 text-xl font-semibold text-center">
                   Envie sua Mensagem
                 </h3>
                 <div className="flex justify-center">

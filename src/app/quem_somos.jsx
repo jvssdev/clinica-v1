@@ -4,7 +4,7 @@ export default function QuemSomos() {
   return (
     <div className="py-24 relative overflow-hidden bg-cyan-50">
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/2 left-1/2 w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-purple-600/10 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-cyan-600/10 rounded-full filter blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

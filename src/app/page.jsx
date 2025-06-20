@@ -124,7 +124,7 @@ export default function Clinica() {
           </div>
         </section>
 
-        <section id="atendimentos" className="pt-1 pb-10">
+        <section id="atendimentos" className="pt-1 pb-2">
           <div className="container">
             <h2 className="text-3xl md:text-4xl font-bold text-cyan-900 text-center mb-12">
               <Atendimentos />
@@ -132,15 +132,15 @@ export default function Clinica() {
           </div>
         </section>
 
-        <section id="depoimentos" className="py-16">
+        <section id="depoimentos">
           <Depoimentos />
         </section>
 
-        <section id="contato" className="pb-16">
+        <section id="contato" className="pt-16 bg-cyan-800">
           <FormularioDeContato />
         </section>
 
-        <section id="localizacao" className="py-16 bg-cyan-800 text-white">
+        <section id="localizacao" className="py-16 bg-cyan-50 text-cyan-900">
           <Localizacao />
         </section>
       </main>

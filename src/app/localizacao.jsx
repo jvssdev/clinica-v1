@@ -5,7 +5,7 @@ export default function Localizacao() {
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Torne o seu sonho de ter um sorriso encantador em realidade agora!
         </h2>
-        <p className="text-lg md:text-lg mb-8 text-cyan-100">
+        <p className="text-lg md:text-lg mb-8 text-cyan-800">
           Entre em contato conosco agora para obter mais informações ou agendar
           uma visita.
         </p>
@@ -36,7 +36,7 @@ export default function Localizacao() {
                   </svg>
                 </span>
                 <div>
-                  <p className="font-medium">Telefone</p>
+                  <p className="font-medium text-left">Telefone</p>
                   <p className="text-gray-600">(61) 99999-9999</p>
                 </div>
               </div>
@@ -60,7 +60,7 @@ export default function Localizacao() {
                   </svg>
                 </span>
                 <div>
-                  <p className="font-medium">Email</p>
+                  <p className="font-medium text-left">Email</p>
                   <p className="text-gray-600">contato@clinicaaguiar.com.br</p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ export default function Localizacao() {
                   </svg>
                 </span>
                 <div>
-                  <p className="font-medium">Endereço</p>
+                  <p className="font-medium text-left">Endereço</p>
                   <p className="text-left text-gray-600">
                     Praça dos Cristais
                     <br />
