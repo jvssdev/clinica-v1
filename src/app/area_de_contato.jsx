@@ -4,7 +4,7 @@ import { enviarFormulario } from './enviar_formulario';
 import { useActionState } from 'react';
 
 export default function FormularioDeContato() {
-  const [acao, pendente] = useActionState(enviarFormulario, null);
+  const [estado, acao, pendente] = useActionState(enviarFormulario, null);
 
   return (
     <section className="py-16 bg-gray-50">
@@ -148,6 +148,14 @@ export default function FormularioDeContato() {
                 WhatsApp.
               </p>
             </form>
+
+            {estado?.message && (
+              <div
+                className={`mt-4 p-3 rounded-md ${estado.success ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}
+              >
+                {estado.message}
+              </div>
+            )}
           </div>
         </div>
       </div>
