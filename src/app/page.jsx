@@ -113,7 +113,7 @@ export default function Clinica() {
         <section id="quem-somos">
           <QuemSomos />
         </section>
-        <section id="portifolio" className="pt-16 pb-1">
+        <section id="portifolio" className="pt-20 pb-1">
           <div className="container">
             <h2 className="sm:text-3xl md:text-5xl font-bold text-cyan-900 text-center mb-12">
               Portifólio dos nossos serviços
@@ -124,7 +124,7 @@ export default function Clinica() {
           </div>
         </section>
 
-        <section id="atendimentos" className="pt-1 pb-2">
+        <section id="atendimentos" className="pt-1 pb-2 pt-16">
           <div className="container">
             <h2 className="text-3xl md:text-4xl font-bold text-cyan-900 text-center mb-12">
               <Atendimentos />

@@ -23,7 +23,7 @@ const atendimentos = [
 
 export default function Atendimento() {
   return (
-    <div className="container space-y-16 py-24 md:py-24 text-center">
+    <div className="container   text-center">
       <div className="mx-auto max-w-[58rem]">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
           Serviços Oferecidos
@@ -36,7 +36,7 @@ export default function Atendimento() {
         {atendimentos.map((atendimento) => (
           <div
             key={atendimento.nome}
-            className="relative overflow-hidden rounded-lg border p-8 text-center"
+            className="relative overflow-hidden rounded-lg border p-2 text-center"
           >
             <div className="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg

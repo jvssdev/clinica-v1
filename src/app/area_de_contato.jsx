@@ -9,7 +9,7 @@ export default function FormularioDeContato() {
   return (
     <section className="pb-16 bg-cyan-800">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-2">
           <h2 className="text-3xl font-bold text-cyan-50 mb-4">
             Entre em Contato Conosco
           </h2>
@@ -35,10 +35,10 @@ export default function FormularioDeContato() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth={2}
+                    strokeWidth={3}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="icon icon-tabler icons-tabler-outline icon-tabler-message-circle-plus"
+                    className="icon icon-tabler icons-tabler-outline icon-tabler-message-circle-plus text-cyan-900"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M12.007 19.98a9.869 9.869 0 0 1 -4.307 -.98l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c1.992 1.7 2.93 4.04 2.747 6.34" />
@@ -143,7 +143,7 @@ export default function FormularioDeContato() {
                 )}
               </button>
 
-              <p className="text-sm text-gray-500 text-center">
+              <p className="text-sm text-cyan-600 text-center">
                 * Campos obrigatórios. Ao enviar, você será redirecionado para o
                 WhatsApp.
               </p>
