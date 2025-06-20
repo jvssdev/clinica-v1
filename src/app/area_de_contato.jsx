@@ -7,7 +7,7 @@ export default function FormularioDeContato() {
   const [estado, acao, pendente] = useActionState(enviarFormulario, null);
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="pb-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-cyan-900 mb-4">
@@ -70,7 +70,7 @@ export default function FormularioDeContato() {
                     required
                     placeholder="Seu nome completo"
                     disabled={pendente}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
+                    className="text-cyan-900 w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
                   />
                 </div>
                 <div className="space-y-2">
@@ -87,7 +87,7 @@ export default function FormularioDeContato() {
                     required
                     placeholder="(61) 99999-9999"
                     disabled={pendente}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
+                    className="text-cyan-900 w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
                   />
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function FormularioDeContato() {
                   required
                   placeholder="seu@email.com"
                   disabled={pendente}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
+                  className="text-cyan-900 w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
                 />
               </div>
 
@@ -124,7 +124,7 @@ export default function FormularioDeContato() {
                   placeholder="Descreva como podemos ajudá-lo..."
                   rows={4}
                   disabled={pendente}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed resize-vertical"
+                  className="text-cyan-900 w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed resize-vertical"
                 />
               </div>
 

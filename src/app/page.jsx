@@ -132,16 +132,19 @@ export default function Clinica() {
           </div>
         </section>
 
-        <section id="depoimentos" className="py-16 bg-cyan-50">
+        <section id="depoimentos" className="py-16">
           <Depoimentos />
+        </section>
+
+        <section id="contato" className="pb-16">
+          <FormularioDeContato />
         </section>
 
         <section id="localizacao" className="py-16 bg-cyan-800 text-white">
           <Localizacao />
         </section>
-        <FormularioDeContato />
       </main>
-      <footer id="contato" className="bg-cyan-900 text-cyan-100 py-12 ">
+      <footer className="bg-cyan-900 text-cyan-100 py-12 ">
         <div className="container">
           <div className="flex justify-between items-center">
             <div>
