@@ -4,7 +4,7 @@ import { enviarFormulario } from './enviar_formulario';
 import { useActionState } from 'react';
 
 export default function FormularioDeContato() {
-  const [estado, acao, pendente] = useActionState(enviarFormulario, null);
+  const [acao, pendente] = useActionState(enviarFormulario, null);
 
   return (
     <section className="py-16 bg-gray-50">

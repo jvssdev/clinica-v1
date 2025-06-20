@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Atendimentos from './atendimentos';
 import Portifolio from './portifolio';
 import FormularioDeContato from './area_de_contato';
+import QuemSomos from './quem_somos';
 export default function Clinica() {
   return (
     <div className="flex flex-col min-h-screen bg-[#FDF8F3]">
@@ -37,6 +38,12 @@ export default function Clinica() {
               href="#inicio"
             >
               Início
+            </Link>
+            <Link
+              className="text-sm font-medium text-cyan-900 hover:text-cyan-700"
+              href="#quem-somos"
+            >
+              Quem somos
             </Link>
             <Link
               href="#portifolio"
@@ -96,7 +103,9 @@ export default function Clinica() {
             </div>
           </div>
         </section>
-
+        <section id="quem-omos">
+          <QuemSomos />
+        </section>
         <section id="portifolio" className="py-16 bg-cyan-50">
           <div className="container">
             <h2 className="text-3xl md:text-4xl font-bold text-cyan-900 text-center mb-12">
