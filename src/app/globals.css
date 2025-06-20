@@ -1,16 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
-
-/* @theme inline { */
-/*   --color-background: var(--background); */
-/*   --color-foreground: var(--foreground); */
-/*   --font-sans: var(--font-geist-sans); */
-/*   --font-mono: var(--font-geist-mono); */
-/* } */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -59,12 +52,20 @@ body {
   --container-max-width-2xl: 1400px;
 
   @keyframes accordion-down {
-    from { height: 0; }
-    to { height: var(--radix-accordion-content-height); }
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
   }
 
   @keyframes accordion-up {
-    from { height: var(--radix-accordion-content-height); }
-    to { height: 0; }
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
   }
 }

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import BotaoWhatsApp from './BotaoWhatsApp';
 import Depoimentos from './Depoimentos';
 import Link from 'next/link';
 import Atendimentos from './atendimentos';
@@ -7,6 +6,8 @@ import Portifolio from './portifolio';
 import FormularioDeContato from './area_de_contato';
 import QuemSomos from './quem_somos';
 import Localizacao from './localizacao';
+import BotaoWhatsApp from './botao_whatsapp';
+
 export default function Clinica() {
   return (
     <div className="flex flex-col min-h-screen bg-[#FDF8F3]">
@@ -19,11 +20,11 @@ export default function Clinica() {
               height={24}
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#005f78"
+              stroke="currentColor"
               strokeWidth={2}
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="icon icon-tabler icons-tabler-outline icon-tabler-dental"
+              className="icon icon-tabler icons-tabler-outline icon-tabler-dental text-cyan-900"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M12 5.5c-1.074 -.586 -2.583 -1.5 -4 -1.5c-2.1 0 -4 1.247 -4 5c0 4.899 1.056 8.41 2.671 10.537c.573 .756 1.97 .521 2.567 -.236c.398 -.505 .819 -1.439 1.262 -2.801c.292 -.771 .892 -1.504 1.5 -1.5c.602 0 1.21 .737 1.5 1.5c.443 1.362 .864 2.295 1.262 2.8c.597 .759 2 .993 2.567 .237c1.615 -2.127 2.671 -5.637 2.671 -10.537c0 -3.74 -1.908 -5 -4 -5c-1.423 0 -2.92 .911 -4 1.5z" />
@@ -77,9 +78,6 @@ export default function Clinica() {
               Localização
             </Link>
           </nav>
-          <button className="bg-cyan-800 hover:bg-cyan-900 text-white">
-            Contate-nos
-          </button>
         </div>
       </header>
 
@@ -90,7 +88,7 @@ export default function Clinica() {
         >
           <div className="absolute inset-0 z-0">
             <Image
-              src="/logo4.png"
+              src="/logo3.png"
               alt="Logo Clínica Odontológica Aguiar"
               fill
               className="object-cover opacity-60"
@@ -181,11 +179,11 @@ export default function Clinica() {
                     height={24}
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#ecfeff"
+                    stroke="currentColor"
                     strokeWidth={2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+                    className="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram text-cyan-50"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
@@ -200,11 +198,11 @@ export default function Clinica() {
                     height={24}
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#ecfeff"
+                    stroke="currentColor"
                     strokeWidth={2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+                    className="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook text-cyan-50"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
@@ -217,11 +215,11 @@ export default function Clinica() {
                     height={24}
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#ecfeff"
+                    stroke="currentColor"
                     strokeWidth={2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
+                    className="icon icon-tabler icons-tabler-outline icon-tabler-brand-x text-cyan-50"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
