@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Depoimentos from './Depoimentos';
+import Depoimentos from './depoimentos';
 import Link from 'next/link';
 import Atendimentos from './atendimentos';
 import Portifolio from './portifolio';
