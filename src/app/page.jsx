@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import Depoimentos from './depoimentos';
-import Link from 'next/link';
-import Atendimentos from './atendimentos';
-import Portifolio from './portifolio';
-import FormularioDeContato from './area_de_contato';
 import QuemSomos from './quem_somos';
-import Localizacao from './localizacao';
 import BotaoWhatsApp from './botao_whatsapp';
+import FormularioDeContato from './area_de_contato';
+import Portifolio from './portifolio';
+import Atendimentos from './atendimentos';
+import Depoimentos from './depoimentos';
+import Localizacao from './localizacao';
+import Link from 'next/link';
 
 export default function Clinica() {
   return (
